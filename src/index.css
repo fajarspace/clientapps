@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Contoh CSS untuk menyesuaikan Select dari Ant Design untuk dark mode */
+.dark .ant-select-selector {
+  background-color: #18181b !important; /* Warna latar belakang */
+  /* border-color: #d9d9d9 !important;  */
+  /* border-color: #444 !important; */
+  color: #fff !important; /* Warna teks */
+}
+
+.dark .ant-select-selector .ant-select-selection-placeholder {
+  color: #999; /* Warna placeholder */
+}
+
+.dark .ant-select-selector .ant-select-selection-search-input::placeholder {
+  color: #000 !important; /* Warna placeholder input pencarian */
+}
+
+.dark .ant-select-arrow {
+  color: #fff; /* Warna panah dropdown */
+}
+
+.dark .ant-select-selector:hover,
+.dark .ant-select-selector:focus {
+  border-color: #777 !important;
+  /* box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2); */
+}
+
+/* dark.css */
+
+.dark .ant-steps-item-title {
+  color: #fff !important; /* Light text color for the step title */
+}
+
+.dark .ant-steps-item-description {
+  color: #bbb !important; /* Light text color for the step description */
+}
+
+.dark .ant-steps-item-icon .ant-steps-icon {
+  color: #fff !important; /* Custom color for the step icons in dark */
+}
+/* .dark .ant-steps-item-icon {
+  background-color: red !important;
+} */
+
+.dark .ant-steps-item-tail {
+  color: #fff !important; /* Custom color for the step icons in dark */
+}
+
+.dark .ant-steps-item-finish .ant-steps-finish-icon {
+  color: blue;
+}
+
+/* antd-dark-mode.css */
+
+/* Apply dark mode styles when the dark-mode class is present on the body */
+.dark .ant-input {
+  background-color: #18181b;
+  color: #888;
+  /* border: 1px solid #555; */
+}
+
+.dark .ant-input:hover,
+.dark .ant-input:focus {
+  border-color: #777;
+  /* box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2); */
+}
+
+.dark .ant-input::placeholder {
+  color: #aaa;
+}
+
+/* Style for readonly input */
+.dark .ant-input[readonly] {
+  background-color: #18181b;
+  color: #888;
+  /* border-color: #444; */
+}

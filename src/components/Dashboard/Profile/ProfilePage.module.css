@@ -1,0 +1,87 @@
+.profileContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profileCard {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.profileName {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.profileTitle {
+  font-size: 16px;
+  color: #888;
+  margin: 0;
+}
+
+.profileAvatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.profileInfo {
+  padding: 20px;
+}
+
+.profileSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.profileLabel {
+  font-weight: bold;
+  color: #333;
+}
+
+.profileValue {
+  color: #666;
+}
+
+/* Dark mode styles */
+.dark .profileCard {
+  background-color: #333 !important;
+  color: #fff;
+}
+
+.dark .profileHeader {
+  background-color: #444;
+  border-bottom: 1px solid #555;
+}
+
+.dark .profileTitle {
+  color: #bbb;
+}
+
+.dark .profileLabel {
+  color: #ddd;
+}
+
+.dark .profileValue {
+  color: #aaa;
+}
